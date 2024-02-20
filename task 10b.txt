@@ -1,0 +1,20 @@
+// Author: [Your Name]
+// Date: [Current Date]
+
+// Addition operation resulting in the number 8.
+let additionResult: number = 5 + 3;
+
+// Subtraction operation resulting in the number 8.
+let subtractionResult: number = 10 - 2;
+
+// Multiplication operation resulting in the number 8.
+let multiplicationResult: number = 4 * 2;
+
+// Division operation resulting in the number 8.
+let divisionResult: number = 64 / 8;
+
+// Print each result.
+console.log("Addition result: " + additionResult);
+console.log("Subtraction result: " + subtractionResult);
+console.log("Multiplication result: " + multiplicationResult);
+console.log("Division result: " + divisionResult);

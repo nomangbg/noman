@@ -1,0 +1,15 @@
+// Addition
+let additionResult: number = 5 + 3;
+console.log("Addition result: " + additionResult);
+
+// Subtraction
+let subtractionResult: number = 10 - 2;
+console.log("Subtraction result: " + subtractionResult);
+
+// Multiplication
+let multiplicationResult: number = 4 * 2;
+console.log("Multiplication result: " + multiplicationResult);
+
+// Division
+let divisionResult: number = 64 / 8;
+console.log("Division result: " + divisionResult);

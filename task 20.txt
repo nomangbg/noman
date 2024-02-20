@@ -1,0 +1,47 @@
+let dinnerGuests: string[] = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie"];
+
+// Print a message inviting each person to dinner.
+for (let i = 0; i < dinnerGuests.length; i++) {
+    console.log(`Dear ${dinnerGuests[i]}, I would like to invite you to dinner. Please join me for a delightful evening!`);
+}
+
+// Someone can't make it to dinner
+let unableToAttend: string = dinnerGuests[1]; // Let's say Leonardo da Vinci can't make it
+
+// Print the name of the guest who can't make it
+console.log(`${unableToAttend} can't make it to dinner.`);
+
+// Replace the name of the guest who can't make it with the name of the new person you are inviting
+dinnerGuests[1] = "Nikola Tesla"; // Replace Leonardo da Vinci with Nikola Tesla
+
+// Print a second set of invitation messages
+console.log("\nSecond set of invitations:");
+
+// Print a message inviting each person to dinner again
+for (let i = 0; i < dinnerGuests.length; i++) {
+    console.log(`Dear ${dinnerGuests[i]}, I would like to invite you to dinner. Please join me for a delightful evening!`);
+}
+
+// Inform people that you found a bigger dinner table
+console.log("Good news! I found a bigger dinner table.");
+
+// Add one new guest to the beginning of your array
+dinnerGuests.unshift("Isaac Newton");
+
+// Add one new guest to the middle of your array
+let middleIndex: number = Math.floor(dinnerGuests.length / 2);
+dinnerGuests.splice(middleIndex, 0, "Galileo Galilei");
+
+// Add one new guest to the end of your list
+dinnerGuests.push("Stephen Hawking");
+
+// Print a message indicating the number of people invited to dinner
+console.log(`Number of people invited to dinner: ${dinnerGuests.length}`);
+
+// Print a new set of invitation messages
+console.log("\nThird set of invitations:");
+
+// Print a message inviting each person to dinner again
+for (let i = 0; i < dinnerGuests.length; i++) {
+    console.log(`Dear ${dinnerGuests[i]}, I would like to invite you to dinner. Please join me for a delightful evening!`);
+}

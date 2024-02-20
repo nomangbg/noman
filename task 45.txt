@@ -1,0 +1,19 @@
+function store_car_info(manufacturer: string, model: string, ...extras: { [key: string]: any }[]): { manufacturer: string, model: string, extras: { [key: string]: any } } {
+    let car_info: { manufacturer: string, model: string, extras: { [key: string]: any } } = {
+        manufacturer: manufacturer,
+        model: model,
+        extras: {}
+    };
+
+    for (let extra of extras) {
+        Object.assign(car_info.extras, extra);
+    }
+
+    return car_info;
+}
+
+// Call the function with required information and two additional name-value pairs
+let car = store_car_info("Toyota", "Camry", { color: "Red" }, { features: ["Navigation", "Sunroof"] });
+
+// Print the Object to make sure all the information was stored correctly
+console.log(car);

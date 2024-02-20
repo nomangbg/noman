@@ -1,0 +1,21 @@
+// List of current usernames
+let current_users: string[] = ["alice", "bob", "charlie", "david", "john"];
+
+// List of new usernames
+let new_users: string[] = ["john", "emma", "daniel", "ALICE", "sophia"];
+
+// Convert all current usernames to lowercase for case-insensitive comparison
+let current_users_lower: string[] = current_users.map(username => username.toLowerCase());
+
+// Loop through the new_users list to check for uniqueness
+for (let new_username of new_users) {
+    // Convert the new username to lowercase for case-insensitive comparison
+    let new_username_lower: string = new_username.toLowerCase();
+    
+    // Check if the new username is already in use
+    if (current_users_lower.includes(new_username_lower)) {
+        console.log(`Sorry, the username '${new_username}' is already taken. Please enter a new username.`);
+    } else {
+        console.log(`Congratulations! The username '${new_username}' is available.`);
+    }
+}

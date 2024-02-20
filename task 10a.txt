@@ -1,0 +1,8 @@
+// Author: [Your Name]
+// Date: [Current Date]
+
+// Store your favorite number in a variable.
+let favoriteNumber: number = 42;
+
+// Create a message that reveals your favorite number and print it.
+console.log(`My favorite number is: ${favoriteNumber}`);

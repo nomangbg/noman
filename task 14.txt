@@ -1,0 +1,6 @@
+let dinnerGuests: string[] = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie"];
+
+// Print a message inviting each person to dinner.
+for (let i = 0; i < dinnerGuests.length; i++) {
+    console.log(`Dear ${dinnerGuests[i]}, I would like to invite you to dinner. Please join me for a delightful evening!`);
+}

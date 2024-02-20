@@ -1,0 +1,8 @@
+let numbers: number[] = [1, 2, 3, 4, 5];
+
+// Intentional error: accessing an index that is out of bounds
+// Let's try to access the 6th element in the array, which doesn't exist
+console.log(numbers[5]); // This will cause an array index error
+
+// Correcting the error by accessing an existing index
+console.log(numbers[4]); // Accessing the 5th element in the array
